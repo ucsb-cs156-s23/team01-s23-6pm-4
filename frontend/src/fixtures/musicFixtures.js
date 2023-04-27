@@ -33,7 +33,7 @@ const musicFixtures = {
             "title": "NUMB",
             "album": "?",
             "artist": "XXXTentacion",
-            "genre": "K-pop"
+            "genre": "Trap"
         },
         
     ]
