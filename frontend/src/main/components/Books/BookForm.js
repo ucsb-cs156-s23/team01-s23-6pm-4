@@ -37,6 +37,7 @@ function BookForm({ initialContents, submitAction, buttonLabel = "Create" }) {
                 </Form.Group>
             )}
 
+
             <Form.Group className="mb-3" >
                 <Form.Label htmlFor="title">Title</Form.Label>
                 <Form.Control
@@ -45,13 +46,14 @@ function BookForm({ initialContents, submitAction, buttonLabel = "Create" }) {
                     type="text"
                     isInvalid={Boolean(errors.title)}
                     {...register("title", {
-                        required: "Title is required.",
+                        required: "Title is required."
                     })}
                 />
                 <Form.Control.Feedback type="invalid">
                     {errors.title?.message}
                 </Form.Control.Feedback>
             </Form.Group>
+
 
             <Form.Group className="mb-3" >
                 <Form.Label htmlFor="author">Author</Form.Label>
@@ -61,7 +63,7 @@ function BookForm({ initialContents, submitAction, buttonLabel = "Create" }) {
                     type="text"
                     isInvalid={Boolean(errors.author)}
                     {...register("author", {
-                        required: "Author is required.",
+                        required: "Author is required."
                     })}
                 />
                 <Form.Control.Feedback type="invalid">
@@ -100,7 +102,6 @@ function BookForm({ initialContents, submitAction, buttonLabel = "Create" }) {
                     {errors.genre?.message}
                 </Form.Control.Feedback>
             </Form.Group>
-
 
             <Button
                 type="submit"
