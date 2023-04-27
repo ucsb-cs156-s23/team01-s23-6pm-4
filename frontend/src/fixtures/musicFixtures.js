@@ -10,7 +10,7 @@ const musicFixtures = {
       }
     ],
 
-    threeMusic:
+    threeMusics:
     [
         {
             "id": 2,
