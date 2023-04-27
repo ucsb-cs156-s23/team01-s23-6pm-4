@@ -1,8 +1,8 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import RestaurantForm from "main/components/Restaurants/RestaurantForm";
-import { restaurantFixtures } from "fixtures/restaurantFixtures";
+import BookForm from "main/components/Books/BookForm";
+import { bookFixtures } from "fixtures/bookFixtures";
 
 import { QueryClient, QueryClientProvider } from "react-query";
 
@@ -13,17 +13,17 @@ jest.mock('react-router-dom', () => ({
     useNavigate: () => mockedNavigate
 }));
 
-describe("RestaurantForm tests", () => {
+describe("BookForm tests", () => {
     const queryClient = new QueryClient();
 
-    const expectedHeaders = ["Name","Description"];
-    const testId = "RestaurantForm";
+    const expectedHeaders = ["Title","Author","Description","Genre"];
+    const testId = "BookForm";
 
     test("renders correctly with no initialContents", async () => {
         render(
             <QueryClientProvider client={queryClient}>
                 <Router>
-                    <RestaurantForm />
+                    <BookForm />
                 </Router>
             </QueryClientProvider>
         );
@@ -41,7 +41,7 @@ describe("RestaurantForm tests", () => {
         render(
             <QueryClientProvider client={queryClient}>
                 <Router>
-                    <RestaurantForm initialContents={restaurantFixtures.oneRestaurant} />
+                    <BookForm initialContents={bookFixtures.oneBook} />
                 </Router>
             </QueryClientProvider>
         );
@@ -62,7 +62,7 @@ describe("RestaurantForm tests", () => {
         render(
             <QueryClientProvider client={queryClient}>
                 <Router>
-                    <RestaurantForm />
+                    <BookForm />
                 </Router>
             </QueryClientProvider>
         );
