@@ -7,7 +7,7 @@ const apartmentFixtures = {
         "address": "555 Storke Road",
         "city": "Goleta",
         "state": "CA",
-        "rooms": "109",
+        "rooms": 109,
         "description": "Nice and New"      
       }
     ],
@@ -20,7 +20,7 @@ const apartmentFixtures = {
             "address": "6667 El Colegio Road",
             "city": "Goleta",
             "state": "CA",
-            "rooms": "50",
+            "rooms": 50,
             "description": "Tropicana but Nicer"
         },
 
@@ -30,7 +30,7 @@ const apartmentFixtures = {
             "address": "650 Storke Road",
             "city": "Goleta",
             "state": "CA",
-            "rooms": "166",
+            "rooms": 166,
             "description": "Nice but Far"
         },
 
@@ -40,7 +40,7 @@ const apartmentFixtures = {
         "address": "811 Camino Pescadero",
         "city": "Goleta",
         "state": "CA",
-        "rooms": "48",
+        "rooms": 48,
         "description": "Dated and Run-Down"
         },
         
