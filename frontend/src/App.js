@@ -15,6 +15,12 @@ import BookEditPage from "main/pages/Books/BookEditPage";
 import BookIndexPage from "main/pages/Books/BookIndexPage";
 import BookDetailsPage from "main/pages/Books/BookDetailsPage";
 
+import ApartmentCreatePage from "main/pages/Apartments/ApartmentCreatePage";
+import ApartmentEditPage from "main/pages/Apartments/ApartmentEditPage";
+import ApartmentIndexPage from "main/pages/Apartments/ApartmentIndexPage";
+import ApartmentDetailsPage from "main/pages/Apartments/ApartmentDetailsPage";
+
+
 function App() {
 
   const reload = () => window.location.reload();
@@ -38,6 +44,11 @@ function App() {
         <Route exact path="/books/edit/:id" element={<BookEditPage />} />
         <Route exact path="/books/details/:id" element={<BookDetailsPage />} />
         <Route exact path="/books/" element={<BookIndexPage />} />
+
+        <Route exact path="/apartments/create" element={<ApartmentCreatePage />} />
+        <Route exact path="/apartments/edit/:id" element={<ApartmentEditPage />} />
+        <Route exact path="/apartments/details/:id" element={<ApartmentDetailsPage />} />
+        <Route exact path="/apartments/" element={<ApartmentIndexPage />} />
 
       </Routes>
     </BrowserRouter>
