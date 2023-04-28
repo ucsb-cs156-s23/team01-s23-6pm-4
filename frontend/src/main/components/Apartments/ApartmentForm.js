@@ -58,54 +58,6 @@ function ApartmentForm({ initialContents, submitAction, buttonLabel = "Create" }
             </Form.Group>
 
             <Form.Group className="mb-3" >
-                <Form.Label htmlFor="address">Address</Form.Label>
-                <Form.Control
-                    data-testid={testIdPrefix + "-address"}
-                    id="address"
-                    type="text"
-                    isInvalid={Boolean(errors.rooms)}
-                    {...register("address", {
-                        required: "The address is required."
-                    })}
-                />
-                <Form.Control.Feedback type="invalid">
-                    {errors.address?.message}
-                </Form.Control.Feedback>
-            </Form.Group>
-
-            <Form.Group className="mb-3" >
-                <Form.Label htmlFor="city">City</Form.Label>
-                <Form.Control
-                    data-testid={testIdPrefix + "-city"}
-                    id="city"
-                    type="text"
-                    isInvalid={Boolean(errors.rooms)}
-                    {...register("city", {
-                        required: "The city is required."
-                    })}
-                />
-                <Form.Control.Feedback type="invalid">
-                    {errors.city?.message}
-                </Form.Control.Feedback>
-            </Form.Group>
-
-            <Form.Group className="mb-3" >
-                <Form.Label htmlFor="state">State</Form.Label>
-                <Form.Control
-                    data-testid={testIdPrefix + "-state"}
-                    id="state"
-                    type="text"
-                    isInvalid={Boolean(errors.rooms)}
-                    {...register("state", {
-                        required: "The state is required."
-                    })}
-                />
-                <Form.Control.Feedback type="invalid">
-                    {errors.state?.message}
-                </Form.Control.Feedback>
-            </Form.Group>
-
-            <Form.Group className="mb-3" >
                 <Form.Label htmlFor="rooms">Rooms</Form.Label>
                 <Form.Control
                     data-testid={testIdPrefix + "-rooms"}
