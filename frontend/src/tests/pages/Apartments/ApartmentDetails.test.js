@@ -21,8 +21,11 @@ jest.mock('main/utils/apartmentUtils', () => {
                     apartment: {
                         id: 3,
                         name: "San Joaquin North Villages",
+                        address: "650 Storke Road",
+                        city: "Goleta",
+                        state: "CA",
+                        rooms: 166,
                         description: "Nice",
-                        rooms: 166
                     }
                 }
             }
@@ -52,6 +55,10 @@ describe("ApartmentDetailsPage tests", () => {
             </QueryClientProvider>
         );
         expect(screen.getByText("San Joaquin North Villages")).toBeInTheDocument();
+        expect(screen.getByText("650 Storke Road")).toBeInTheDocument();
+        expect(screen.getByText("Goleta")).toBeInTheDocument();
+        expect(screen.getByText("CA")).toBeInTheDocument();
+        expect(screen.getByText(166)).toBeInTheDocument();
         expect(screen.getByText("Nice")).toBeInTheDocument();
 
         expect(screen.queryByText("Delete")).not.toBeInTheDocument();
