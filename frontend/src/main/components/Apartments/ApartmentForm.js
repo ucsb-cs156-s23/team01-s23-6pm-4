@@ -58,7 +58,7 @@ function ApartmentForm({ initialContents, submitAction, buttonLabel = "Create" }
             </Form.Group>
 
             <Form.Group className="mb-3" >
-                <Form.Label htmlFor="description">Address</Form.Label>
+                <Form.Label htmlFor="address">Address</Form.Label>
                 <Form.Control
                     data-testid={testIdPrefix + "-address"}
                     id="address"
@@ -74,7 +74,7 @@ function ApartmentForm({ initialContents, submitAction, buttonLabel = "Create" }
             </Form.Group>
 
             <Form.Group className="mb-3" >
-                <Form.Label htmlFor="description">City</Form.Label>
+                <Form.Label htmlFor="city">City</Form.Label>
                 <Form.Control
                     data-testid={testIdPrefix + "-city"}
                     id="city"
@@ -90,7 +90,7 @@ function ApartmentForm({ initialContents, submitAction, buttonLabel = "Create" }
             </Form.Group>
             
             <Form.Group className="mb-3" >
-                <Form.Label htmlFor="description">State</Form.Label>
+                <Form.Label htmlFor="state">State</Form.Label>
                 <Form.Control
                     data-testid={testIdPrefix + "-state"}
                     id="state"
