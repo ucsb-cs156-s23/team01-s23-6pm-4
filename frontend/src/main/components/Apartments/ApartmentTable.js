@@ -40,12 +40,24 @@ export default function ApartmentTable({
             accessor: 'name',
         },
         {
-            Header: 'Description',
-            accessor: 'description',
+            Header: 'Address',
+            accessor: 'address',
+        },
+        {
+            Header: 'City',
+            accessor: 'city',
+        },
+        {
+            Header: 'State',
+            accessor: 'state',
         },
         {
             Header: 'Rooms',
             accessor: 'rooms',
+        },
+        {
+            Header: 'Description',
+            accessor: 'description',
         }
     ];
 

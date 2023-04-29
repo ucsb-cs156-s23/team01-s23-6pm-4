@@ -108,7 +108,7 @@ describe("ApartmentIndexPage tests", () => {
         // assert - check that the console.log was called with the expected message
         expect(console.log).toHaveBeenCalled();
         const message = console.log.mock.calls[0][0];
-        const expectedMessage = `ApartmentIndexPage deleteCallback: {"id":3,"name":"San Joaquin North Villages","description":"Nice but Far","rooms":166}`;
+        const expectedMessage = `ApartmentIndexPage deleteCallback: {"id":3,"name":"San Joaquin North Villages","address":"650 Storke Road","city":"Goleta","state":"CA","rooms":166,"description":"Nice but Far"}`;
         expect(message).toMatch(expectedMessage);
         restoreConsole();
 

@@ -15,8 +15,8 @@ jest.mock('react-router-dom', () => ({
 describe("ApartmentTable tests", () => {
   const queryClient = new QueryClient();
 
-  const expectedHeaders = ["id", "Name", "Description", "Rooms"];
-  const expectedFields = ["id", "name", "description", "rooms"];
+  const expectedHeaders = ["id", "Name", "Address", "City", "State", "Rooms", "Description"];
+  const expectedFields = ["id", "name", "address", "city", "state", "rooms", "description"];
   const testId = "ApartmentTable";
 
   test("showCell function works properly", () => {
@@ -141,7 +141,7 @@ describe("ApartmentTable tests", () => {
     // assert - check that the console.log was called with the expected message
     expect(console.log).toHaveBeenCalled();
     const message = console.log.mock.calls[0][0];
-    const expectedMessage = `editCallback: {"id":2,"name":"El Dorado","description":"Tropicana but Nicer","rooms":50})`;
+    const expectedMessage = `editCallback: {"id":2,"name":"El Dorado","address":"6667 El Colegio Road","city":"Goleta","state":"CA","rooms":50,"description":"Tropicana but Nicer"})`;
     expect(message).toMatch(expectedMessage);
     restoreConsole();
   });
@@ -175,7 +175,7 @@ describe("ApartmentTable tests", () => {
     // assert - check that the console.log was called with the expected message
     expect(console.log).toHaveBeenCalled();
     const message = console.log.mock.calls[0][0];
-    const expectedMessage = `detailsCallback: {"id":2,"name":"El Dorado","description":"Tropicana but Nicer","rooms":50})`;
+    const expectedMessage = `detailsCallback: {"id":2,"name":"El Dorado","address":"6667 El Colegio Road","city":"Goleta","state":"CA","rooms":50,"description":"Tropicana but Nicer"})`;
     expect(message).toMatch(expectedMessage);
     restoreConsole();
   });
@@ -206,7 +206,7 @@ describe("ApartmentTable tests", () => {
      // assert - check that the console.log was called with the expected message
      await(waitFor(() => expect(console.log).toHaveBeenCalled()));
      const message = console.log.mock.calls[0][0];
-     const expectedMessage = `deleteCallback: {"id":2,"name":"El Dorado","description":"Tropicana but Nicer","rooms":50})`;
+     const expectedMessage = `deleteCallback: {"id":2,"name":"El Dorado","address":"6667 El Colegio Road","city":"Goleta","state":"CA","rooms":50,"description":"Tropicana but Nicer"})`;
      expect(message).toMatch(expectedMessage);
      restoreConsole();
   });
