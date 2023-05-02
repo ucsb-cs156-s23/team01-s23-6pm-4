@@ -22,10 +22,10 @@ const musicFixtures = {
 
         {
             "id": 3,
-            "title": "Daylight",
-            "album": "Daylight",
-            "artist": "David Kushner",
-            "genre": "Pop"
+            "title": "Let You Down",
+            "album": "Perception",
+            "artist": "NF",
+            "genre": "Hip hop"
         },
 
         {

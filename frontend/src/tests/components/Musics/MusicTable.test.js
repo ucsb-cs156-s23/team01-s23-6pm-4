@@ -64,7 +64,7 @@ describe("MusicTable tests", () => {
     expect(screen.getByTestId(`${testId}-cell-row-0-col-title`)).toHaveTextContent("Cupid");
 
     expect(screen.getByTestId(`${testId}-cell-row-1-col-id`)).toHaveTextContent("3");
-    expect(screen.getByTestId(`${testId}-cell-row-1-col-title`)).toHaveTextContent("Daylight");
+    expect(screen.getByTestId(`${testId}-cell-row-1-col-title`)).toHaveTextContent("Let You Down");
 
     const detailsButton = screen.getByTestId(`${testId}-cell-row-0-col-Details-button`);
     expect(detailsButton).toBeInTheDocument();
@@ -104,7 +104,7 @@ describe("MusicTable tests", () => {
     expect(screen.getByTestId(`${testId}-cell-row-0-col-title`)).toHaveTextContent("Cupid");
 
     expect(screen.getByTestId(`${testId}-cell-row-1-col-id`)).toHaveTextContent("3");
-    expect(screen.getByTestId(`${testId}-cell-row-1-col-title`)).toHaveTextContent("Daylight");
+    expect(screen.getByTestId(`${testId}-cell-row-1-col-title`)).toHaveTextContent("Let You Down");
 
     expect(screen.queryByText("Delete")).not.toBeInTheDocument();
     expect(screen.queryByText("Edit")).not.toBeInTheDocument();
